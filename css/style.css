@@ -6,14 +6,12 @@
   --naranja: #a75843;
   --gris: #969892;
 }
-html {
-  box-sizing: border-box;
-  font-size: 62.5%;
 
-  font-family: "Century Gothic";
-  font-weight: 400;
-  font-style: normal;
+html {
+  box-sizing: border-box;  
+  font-size: 62.5%;
 }
+
 *,
 *:before,
 *:after {
@@ -21,46 +19,51 @@ html {
 }
 
 body {
-  font-size: 1.6rem;
   background-color: var(--negroClaro);
+  font-family: "Century Gothic"!important;
+  font-size: 1.6rem;
 }
 
 a {
   text-decoration: none;
-  color: var(--negroOscuro);
 }
-
 .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 2rem;
-  background-color: var(--blancoOscuro);
   border-bottom: 0.2rem solid var(--naranja);
 }
-.navbar-links {
-    display: flex;
-    align-items: center;
-    text-transform: uppercase;
-    font-size: 1.8rem;
+
+.bg-light{
+  background-color: var(--blancoOscuro)!important;
 }
 
-.navbar-link {
-  margin-right: 2rem;
-  margin-left: 2rem;
+.tamaño-logo{
+  width: 6rem;
+  height: 6rem;
+}
+
+.nav-link{
+  color: var(--negroOscuro)!important;
 }
 
 .btn-contacto {
-  color: var(--blancoOscuro);
+  color: var(--blancoOscuro)!important;
   border-radius: 2rem;
   background-color: #a75843;
-  padding: 1rem;
+  padding: 0.5rem;
   text-align: center;
-  margin-left: 2rem;
 }
 
-
+.navbar-idioma a{
+  /* padding-right: 4rem; */
+  font-size: 1.6rem;
+  color: var(--negroOscuro)!important;
+}
 .navbar-idioma{
   padding-right: 4rem;
-  font-size: 1.6rem;
+}
+
+@media ( max-width: 768px ) {
+    .navbar-idioma{
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
 }
