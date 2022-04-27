@@ -4,6 +4,7 @@
   --negroClaro: #333737;
   --negroOscuro: #232c2a;
   --naranja: #a75843;
+  --negroOscuroDegradado: #424b49;
   --gris: #969892;
 }
 
@@ -19,7 +20,8 @@ html {
 }
 
 body {
-  background-color: var(--negroClaro);
+  background-image: linear-gradient(to top, var(--negroOscuro), var(--negroOscuroDegradado));
+  height: 100vh;
   font-family: "Century Gothic"!important;
   font-size: 1.6rem;
 }
@@ -27,6 +29,12 @@ body {
 a {
   text-decoration: none;
 }
+
+h1{
+  color: var(--negroClaro);
+  font-size: 4rem;
+}
+
 .navbar {
   border-bottom: 0.2rem solid var(--naranja);
 }
@@ -67,3 +75,37 @@ a {
       margin-bottom: 2rem;
     }
 }
+
+
+
+.breadcrumb {
+  background-color: var(--blancoOscuro);
+}
+
+.breadcrumb .breadcrumb-item.active {
+  color: var(--naranja);
+}
+
+.breadcrumb .breadcrumb-item + .breadcrumb-item::before {
+  color: var(--negroOscuro);
+}
+
+.breadcrumb a{
+  color: var(--negroClaro);
+}
+
+.page-banner {
+  position: relative;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  height: 18.5rem;
+  background-color: var(--blancoOscuro);
+  border-radius: 30px;
+}
+
+.page-banner .breadcrumb-item,
+.page-banner .breadcrumb-item a {
+  font-size: 2rem;
+}
+
+
