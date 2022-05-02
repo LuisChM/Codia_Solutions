@@ -20,8 +20,9 @@ html {
 }
 
 body {
-  background-image: linear-gradient(to top, var(--negroOscuro), var(--negroOscuroDegradado));
-  height: 100vh;
+  /* background-image: linear-gradient(to top, var(--negroOscuro), var(--negroOscuroDegradado));
+  height: 100vh; */
+  background-color: var(--negroOscuro);
   font-family: "Century Gothic"!important;
   font-size: 1.6rem;
 }
@@ -55,14 +56,19 @@ h1{
 .btn-contacto {
   color: var(--blancoOscuro)!important;
   border-radius: 2rem;
-  background-color: #a75843;
+  background-color: var(--naranja);
   padding: 0.5rem;
   text-align: center;
 }
 
+.btn-contacto:hover{
+  color: var(--naranja)!important;
+  background-color: var(--blancoOscuro);
+  border: 0.2rem solid var(--naranja);
+}
+
 .navbar-idioma a{
   /* padding-right: 4rem; */
-  font-size: 1.6rem;
   color: var(--negroOscuro)!important;
 }
 .navbar-idioma{
@@ -108,4 +114,49 @@ h1{
   font-size: 2rem;
 }
 
+.text-white{
+  color: var(--blancoClaro)!important;
+}
 
+.text-white-50{
+  color: var(--blancoOscuro)!important;
+}
+
+.btn-outline-contacto{
+  background-color: var(--blancoClaro);
+  border:0.2rem solid var(--naranja);
+  color: var(--naranja);
+  margin-bottom: 5rem;
+  font-size: 1.4rem;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.btn-outline-contacto:hover{
+  background-color: var(--naranja);
+  border:0.2rem solid var(--blancoClaro);
+  color: var(--blancoClaro);
+}
+
+.page-footer a{
+  color: var(--negroOscuroDegradado);
+}
+
+.page-footer {
+  position: relative;
+  display: block;
+  padding-top: 80px;
+  padding-bottom: 16px;
+  border-top: 0.1rem solid var(--naranja);
+}
+
+@media ( min-width: 768px ) {
+  .page-footer{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1030;
+    }
+    
+}
